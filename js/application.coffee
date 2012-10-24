@@ -7,9 +7,13 @@ class Entity
         @container.trigger('create')
 
     fetch: ->
+        $('#loader').show()
         self = this
-        $.get @url, (json) ->
+        request = $.get @url, (json) ->
             self.attach({items: json})
+        request.complete ->
+            $('#loader').hide()
+
 
 class Noticias extends Entity
     url: 'http://phpconf.aws.af.cm/noticias'
