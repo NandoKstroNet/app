@@ -80,6 +80,9 @@ class Map
         $('#map_canvas').width($(window).width())
         google.maps.event.trigger(@map, 'resize')
 
+Handlebars.registerHelper "raw", (text) ->
+    new Handlebars.SafeString(text)
+
 $ ->
     $('#noticias').live 'pageinit', (event) ->
         new Noticias Handlebars.templates['noticias-list'], $('#noticias-list')
