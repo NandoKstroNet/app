@@ -83,6 +83,10 @@ class Map
 Handlebars.registerHelper "raw", (text) ->
     new Handlebars.SafeString(text)
 
+$(document).bind "mobileinit", ->
+  $.extend $.mobile,
+    defaultPageTransition: "slide"
+
 $ ->
     $('#noticias').live 'pageinit', (event) ->
         new Noticias Handlebars.templates['noticias-list'], $('#noticias-list')
