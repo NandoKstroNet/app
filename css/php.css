@@ -612,7 +612,10 @@
 -----------------------------------------------------------------------------------------------------------*/
 
 .ui-bar-e {
-	border: 1px solid #494949 /*{e-bar-border}*/;
+	border-top: 1px solid #494949 /*{e-bar-border}*/;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 	background: #3b3b3b /*{e-bar-background-color}*/;
 	color: #FFFFFF /*{e-bar-color}*/;
 	font-weight: bold;
