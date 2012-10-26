@@ -4,6 +4,7 @@
     <description>Aplicação oficial do PHP Conference Brasil 2012</description>
     <author href="http://www.phpconference.com.br/" email="klaussilveira@php.net">Klaus Silveira</author>
     <preference name="orientation" value="portrait" />
+    <preference name="webviewbounce" value="false" />
     
     <icon src="publish/icon/Icon.png" gap:role="default" />
     <icon src="publish/icon/Icon.png" gap:platform="ios" width="57" height="57" />
